@@ -1,0 +1,6 @@
+- name: Ansible test one
+  hosts: ocp
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
