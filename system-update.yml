@@ -4,4 +4,4 @@
     - name: update
       shell: yum update -y
       register: updated
-    -debug: var=updated.stdout_lines
+    - debug: var=updated.stdout_lines
