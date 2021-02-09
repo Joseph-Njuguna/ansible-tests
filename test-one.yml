@@ -1,5 +1,5 @@
 - name: Ansible test one
-  hosts: ocp
+  hosts: all
   tasks:
     - name: Hello Message
       debug:
