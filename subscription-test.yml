@@ -10,3 +10,6 @@
         
     - name: Check status
       raw: subscription-manager repos --list-enabled
+      register: repos
+      
+    - debug: var=repos.stdout_lines
