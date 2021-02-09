@@ -1,0 +1,10 @@
+- name: Check subscription status and enabled subscriptions
+  hosts: all
+  tasks:
+    - name: Check status
+      shell:
+        cmd: subscription-manager status
+        
+    - name: Check status
+      shell:
+        cmd: subscription-manager repos --list-enabled
