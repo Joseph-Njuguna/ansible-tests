@@ -4,7 +4,9 @@
     - name: Check status
       shell:
         cmd: subscription-manager status
+        register: subscription
+
+    - debug: var=subscription.stdout_lines
         
     - name: Check status
-      shell:
-        cmd: subscription-manager repos --list-enabled
+      raw: subscription-manager repos --list-enabled
